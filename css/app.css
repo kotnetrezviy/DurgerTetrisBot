@@ -6,9 +6,10 @@ var(--tg-theme-link-color)
 var(--tg-theme-button-color)
 var(--tg-theme-button-text-color)
 */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500&display=swap");
 
 :root {
-    --bg-color: var(--tg-theme-bg-color);
+    --bg-color: #ecf0f3;
     --wrapper-shadow: -10px 10px 20px #dbdfe2, 10px -10px 20px #fdffff;
     --btn-shadow: -5px 5px 10px #c4c7ca, 5px -5px 10px #ffffff;
     --btn-shadow-inset: inset -5px 5px 10px #c4c7ca, inset 5px -5px 10px #ffffff;
