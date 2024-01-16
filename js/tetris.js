@@ -1,6 +1,6 @@
-let tg = window.Telegram.WebApp;
+function setThemeClass() {
+    document.documentElement.className = Telegram.WebApp.colorScheme;
+}
 
-tg.expand();
-
-tg.MainButton.textColor = "#FFFFFF";
-tg.MainButton.color = "#2cab37";
+Telegram.WebApp.onEvent('themeChanged', setThemeClass);
+setThemeClass();
