@@ -9,7 +9,7 @@ var(--tg-theme-button-text-color)
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500&display=swap");
 
 :root {
-    --bg-color: #ecf0f3;
+    --bg-color: var(--tg-theme-bg-color);
     --wrapper-shadow: -10px 10px 20px #dbdfe2, 10px -10px 20px #fdffff;
     --btn-shadow: -5px 5px 10px #c4c7ca, 5px -5px 10px #ffffff;
     --btn-shadow-inset: inset -5px 5px 10px #c4c7ca, inset 5px -5px 10px #ffffff;
@@ -22,16 +22,6 @@ var(--tg-theme-button-text-color)
     --button-size: 55px;
     --game-width: 414px;
     --game-height: 736px;
-}
-
-.dark {
-    --bg-color: var(--tg-theme-bg-color);
-    --color: #0affef;
-    --setting-btn-color: #f88ab0;
-    --wrapper-shadow: -10px 10px 10px #1f2d39, 10px -10px 10px #293b49;
-    --btn-shadow: -5px 5px 10px #1f2d39, 5px -5px 10px #293b49;
-    --btn-shadow-inset: inset -5px 5px 10px #1f2d39, inset 5px -5px 10px #293b49;
-    --board-shadow-inset: inset -5px 5px 8px #21303c, inset 5px -5px 8px #273846;
 }
 
 * {
