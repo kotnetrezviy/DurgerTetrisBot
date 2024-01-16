@@ -397,6 +397,17 @@ btns.forEach(e => {
                 }
                 gameStart()
                 break
+            case 'btn-theme':
+                body.classList.toggle('dark')
+                let status_bar_chrome = document.querySelector("meta[name='theme-color'")
+                status_bar_chrome.setAttribute("content", body.classList.contains('dark') ? "#243441" : "#ECF0F3")
+
+                let status_bar_win = document.querySelector("meta[name='msapplication-navbutton-color'")
+                status_bar_win.setAttribute("content", body.classList.contains('dark') ? "#243441" : "#ECF0F3")
+
+                let status_bar_ios = document.querySelector("meta[name='apple-mobile-web-app-status-bar-style'")
+                status_bar_ios.setAttribute("content", body.classList.contains('dark') ? "#243441" : "#ECF0F3")
+                break
             case 'btn-pause':
                 gamePause()
                 let btn_play = document.querySelector('#btn-play')
