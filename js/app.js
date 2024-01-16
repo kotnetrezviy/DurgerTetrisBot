@@ -1,13 +1,12 @@
 let tg = window.Telegram.WebApp;
 tg.expand();
 
-function setThemeClass() {
-    document.documentElement.className = Telegram.WebApp.colorScheme;
-}
+// function setThemeClass() {
+//     document.documentElement.className = Telegram.WebApp.colorScheme;
+// }
 
-Telegram.WebApp.onEvent('themeChanged', setThemeClass);
-setThemeClass();
-
+// Telegram.WebApp.onEvent('themeChanged', setThemeClass);
+// setThemeClass();
 
 let board = document.querySelector('.board-section')
 
