@@ -20,7 +20,7 @@ dp = Dispatcher()
 @dp.message(Command("start"))
 async def start(message: types.Message):
     start_markup = types.InlineKeyboardMarkup(
-        inline_keyboard=[[types.InlineKeyboardButton(text = "Play", web_app=WebAppInfo(url="https://kotnetrezviy.github.io/DurgerTetrisBot"))]])
+        inline_keyboard=[[types.InlineKeyboardButton(text = "Play", web_app=WebAppInfo(url="https://grindthemind.ru"))]])
     await message.answer("Welcome to @DurgetTetrisBot", reply_markup=start_markup)
 
 # Запуск процесса поллинга новых апдейтов
